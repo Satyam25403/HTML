@@ -1,0 +1,44 @@
+/* advantage of external stylesheets:we can apply them to more than one html files :are reusable*/
+/* 4 ways to color:named color,rgb,hexadecimal,hsl */
+body{
+    background-color: slategrey;
+}
+/* to apply css to specified elements use:id ofthe element */
+h1{
+    font-family: verdana,arial;
+    color:black
+    /* this is a named color */
+   
+}
+/* rgb values: use color-picker in a browser to select the rgb values */
+
+/* some basic fonts:more available at fonts.google.com: use links in header to use google fonts*/
+#p1{
+    font-family:"lucida console","courier new" ;
+    font-size:2em;
+    /* means twice the normal size:em is unit of measurement,px is another */
+    font-weight:bold;
+    font-style:italic;
+    color:rgb(255,0,0)
+
+    
+}
+/* the hexadecimal way for colours: again we use a color picker */
+#p2{
+    color:#59ff59
+}
+/* using hsl values:click on the color box then click twice on the horizontal bar */
+/* h:hue,s:saturation,l:lightness */
+#p3{
+    color:hsl(120, 93%, 48%)
+}
+#p4{
+    color:blue
+}
+/* to apply css to a class: group of elements */
+.odd{
+    color: red;
+}
+.even{
+    color:black
+}

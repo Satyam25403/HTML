@@ -1,0 +1,224 @@
+<!-- most servers return the index file as the home page  -->
+<!DOCTYPE html>         <!--declaration that it is an html file-->
+
+<html>              <!--represents the root element of an html page-->
+    <head>              <!-- to contain information about web pages ex:title etc-->
+        <title>MY FIRST WEBSITE</title>
+
+
+
+        <!--creating a favicon(icon that appears when we open tabs for the websites):mandatorily at least 96*96 ; .ico .png .gif .jpg .svg are recommended formats-->
+        <!--link tag specifies the relationship between this document and an external source; rel stands for relationship-->
+        <link rel="icon" type="image/jpg" href="images/piggy.jpg">
+
+
+
+    </head>
+    <body>          <!--contains visible content of our web page-->
+
+        <!--header tags typically used for titles or large texts-->
+        <h1>This is a large heading</h1>
+        <h2>This is comparatively small</h2>
+        <h3>This is comparatively small</h3>
+        <h4>This is comparatively small</h4>
+        <h5>This is comparatively small</h5>
+
+
+
+        <hr>            <!--adds a horizontal line -->
+
+        <br>            <!--line break adds an additional empty line-->
+
+
+
+
+
+        <!--paragraph text: paragraphs are implicitly seperated by line breaks-->
+        <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Numquam soluta deleniti doloribus explicabo eligendi 
+        similique eius delectus, rem repellat, unde exercitationem. 
+        Rem ex odit tempora, sed debitis porro veritatis ea?
+        </p>
+        <!--generally paragraph texts ignores lines or additional whitespaces-->
+
+        <br>
+
+        <!--to retain additional formatting between the lines and added whitespaces; use PRE(preformatted text)-->
+        <pre>
+        Lorem ipsum dolor    amet consectetur adipisicing elit.
+        Numquam soluta deleniti    doloribus explicabo eligendi 
+
+        similique eius delectus,   rem repellat, unde exercitationem. 
+        Rem ex odit tempora, sed   debitis porro veritatis ea?
+        </pre>
+
+
+
+
+
+
+
+        <!--HypertextREFerence("a"here means anchor) here href is attribute of a-->
+        <a href="https://www.google.com/" target="_blank" title="Goes to google">
+            Click here to visit google
+        </a>
+        <!--here we are instructing link to open in a new blank page using target-->
+        <!--title specifies what is displayed when we hover over the link-->
+        <br>
+
+        <a href="lyrics.html">song lyrics</a><br>
+        <!--this is a relative reference:since files are next to each other, file name is enough-->
+
+        <a href="mailto:satyamdk6927@gmail.com">
+        email me
+        </a>
+        <!--To mail to an email address-->
+
+
+
+
+
+
+        <!--adding images:images location from the current location is tro be given-->
+        <h1>This is a pig</h1>
+        <a href="link provided here will redirect us on clicking on image">
+        <img src="images/piggy.jpg" height="200" width="200" alt="This is a picture of pig">
+        </a>
+        <!--if for some reasons,if image is not loaded, the text will be displayed-->
+        <!--also the chrome's screen reader will read out this text for visually impaired people-->
+        <!--in same way we can add gifs ;gifs end with extension .gif-->
+
+
+
+
+
+
+        <!--adding audio-->
+        <p>Song:janiye</p>
+        <audio controls autoplay muted loop>
+            <source src="music/janiye.mp3" type="audio/mpeg">
+            <source src="music/janiye.wav" type="audio/wav">
+        </audio>
+        <!--here "controls" attribute allows us to play the audio file-->
+        <!--autoplay:without needing to click play button; loop:play in loop-->
+        <!--alternate wav file is provided if browser dont support mp3; and we have a backup of same audio in wav format-->
+
+
+
+
+
+        <!--include a video .mp4 or .webm or .ogg-->
+        <video src="relativefilename.mp4" width="500px" controls autoplay muted loop></video>
+        <!--if file not supported and we have a backup file of .webm-->
+        <video width="500px" controls autoplay muted loop>
+            <source src="relative_file_name.mp4" type="video/mp4">
+            <source src="relative_file_name.webm" type="video/webm">
+        </video>
+        <!--we can also turn our video into a hyperlink-->
+
+
+
+
+        
+
+        <!--Text formatting gives text special emphasis-->
+        <p>This is normal text</p>
+        <p>This is <b>bold</b> text</p>
+        <p>This is <i>italic</i> text</p>
+        <p>This is <u>underlined</u> text</p>
+        <p>This is <del> deleted </del> text</p>
+        <p>This is <big>Big</big> text</p>
+        <p>This is <small>small</small> text</p>
+        <p>This is <sub>sub</sub> text</p>
+        <p>This is <sup>sup</sup> text</p>
+        <p>This is <tt>monospace</tt> text</p>
+        <p>This is <mark style="background-color:lightgreen">marked</mark> text</p>
+
+
+
+
+
+        <!--span:inline container to group elements for styling purposes:upto selected part-->
+        <!--div:block container to group elements for styling:for whole line-->
+
+        <h1><span style="background-color:tomato">This is a span title</span></h1>
+        <h1><div style="background-color:cyan">This is a div title</div></h1>
+        <p><span style="background-color:tomato">This is a span title</span></p>
+        <p><div style="background-color:cyan">This is a div title</div></p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            <span style="background-color:tomato">Tenetur eos, voluptatibus doloremque amet quos animi voluptates minima dolor nulla commodi quibusdam aut at mollitia,</span> repellendus vero.
+            <div style="background-color:cyan">Error perferendis minus</div> distinctio.</p>
+
+
+
+
+
+
+
+        <!--lists   1.unordered(dots)     2.ordered(numbers)       3.description(key-value){dt,dd: desctription term, definition}       li:list item;lists can be nested-->
+        <h4>Unordered list</h4>
+        <ul>
+            <li>milk</li>
+            <li>eggs</li>
+            <li>bread</li>
+            <li>coffee supplies</li>
+            <ul>
+                <li>coffee beans</li>
+                <li>creamer</li>
+                <li>sugar</li>
+            </ul>
+        </ul><br>
+        <h4>ordered list</h4>
+        <ol>
+            <li>eat breakfast</li>
+            <li>take bath</li>
+            <li>get ready</li>
+        </ol><br>
+        <h4>Description list</h4>
+        <dl>
+            <dt>dragon</dt>
+            <dd>a mythical monster</dd>
+            <dt>pheonix</dt>
+            <dd>an immortal bird</dd>
+            <dt>vampire</dt>
+            <dd>creature feeding on blood</dd>
+            <dt>warewolf</dt>
+            <dd>individual that can change into a wolf</dd>
+        </dl>
+
+
+
+
+
+
+        <!--tables in html   tr:table row    th:table header(writes in bold)    td:table data(writes normally)  align:to align text in cells-->
+        <h3>Store hours</h3>
+        <table border="1">
+            <tr align="center" style="background-color:lightblue">
+                <th width="100">Sunday</th>
+                <th width="100">Monday</th>
+                <th width="100">Tuesday</th>
+                <th width="100">Wednesday</th>
+                <th width="100">Thursday</th>
+                <th width="100">Friday</th>
+                <th width="100">Saturday</th>
+            </tr>
+            <tr align="center">
+                <td>Closed</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>9-5</td>
+                <td>10-2</td>
+            </tr>
+        </table><br>
+
+
+
+
+        
+    </body>
+</html>

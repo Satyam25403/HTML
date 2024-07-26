@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!--buttons in html-->
+    <button onclick="doSomething()" style="font-size:25px;background-color:grey;color:lightblue; border-radius:25px">Click me</button>
+    <p id="greeting">Hello</p>
+    <script>function doSomething(){
+            document.getElementById("greeting").innerHTML="GoodBye"
+        }
+    </script>
+
+
+
+    <!--creating a form ::label:to display wt to enter;  input:input text box;  for:to get the matching box to label;  required:make a field mandatory-->
+    <!--placeholder:to tell user the format in which data is to be entered; pattern:restrict the way to enter data; value:default value-->
+    <!--types:text,password,email,tel,number,date,radio,checkbox,reset,submit-->
+    <!--NOTE:the "id" should match the "for" attribute of the label-->
+    <form action="index.php" method="POST" enctype="multipart/form-data">
+        <!--when we send large amounts of data, first broken into multiple pieces then are re-assembled:multipart/form-data-->
+        <label for="username">username:</label>
+        <input type="text" id="username" placeholder="spongebob" minlength="6" required>
+
+        <label for="password">password:</label>
+        <input type="password" id="password" minlength="6" required><br>
+
+        <label for="gmail">email:</label>
+        <input type="email" id="email" placeholder="spongesquarepants@gmail.com"><br>
+
+        <label for="phone">phone#:</label>
+        <input type="tel" id="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"><br>
+
+        <label for="bday">birthday</label>
+        <input type="date" id="bday"><br>
+
+        <label for="quantity">quantity</label>
+        <input type="number" id="quantity" min="0" max="99" value="1"><br>
+
+        <!--radio buttons:to make only one option selectable; group them using "name" attribute-->
+        <label for="title">title:</label>
+
+        <label for="Mr.">Mr.</label>
+        <input type="radio" id="Mr." value="Mr." name="title">
+        <label for="Ms.">Ms.</label>
+        <input type="radio" id="Ms." value="Ms." name="title">
+        <label for="PhD.">PhD.</label>
+        <input type="radio" id="PhD." value="PhD." name="title"><br>
+
+        <!--dropdown:select from the options given in between select tags-->
+        <label for="payement">payment</label>
+        <select id="payment">
+            <option value="visa">visa</option>
+            <option value="mastercard">mastercard</option>
+            <option value="giftcard">giftcard</option>
+        </select><br>
+
+        <label for="subscribe">SUBSCRIBE</label>
+        <input type="checkbox" id="subscribe"><br>
+
+        <label for="comment">Comment;</label>
+        <textarea id="comment" rows="3" cols="25"></textarea><br>
+
+        <label for="file">file:</label>
+        <!--accept:to specify the file types; if not mentioned, accept all file types by default-->
+        <input type="file" id="file" accept="image/png,image/jpeg"><br>
+
+        <input type="reset">
+        <input type="submit">
+    </form>
+
+
+
+
+    <!--header:used for introductory content at top(title,subtitle,logo,navigationbar) -->
+    <!--footer:act as containers for concluding content at bottom:(author,copyright,contact info)-->
+    <!--{both are semantic tags:describe meaning to both browser and user:css properties can be easily applied}for web pages-->
+    <!--between both of them is the main tag:for organisation and structure-->
+    <header style="background-color:mediumaquamarine">
+        <h1>Welcome to BroCode</h1>
+        <a href="">Home</a>
+        <a href="">About us</a>
+        <a href="">Products</a>
+        <a href="">Contact Us</a>
+        <hr>
+    </header>
+    <main>
+        <h4>check out this piggy</h4>
+        <image src="images/piggy.jpg" alt=""piggy>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti animi impedit quas, fuga pariatur dignissimos et, laudantium consectetur atque exercitationem, vitae nam deserunt. Laborum laboriosam consequuntur esse tempore, explicabo nulla.</p>
+    </main>
+    <footer style="background-color:mediumaquamarine">
+        <hr>
+        author:Brocode<br>
+        &copy; copyright reserved<br>
+        <small><a href="mailto:broCode@fake.com">Brocode@fake.com</a></small>
+    </footer>
+
+
+
+
+</body>
+</html>

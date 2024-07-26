@@ -1,0 +1,61 @@
+/* for border-radius , the higher the number in px,more rounded the corners are;max is 20 */
+h1{
+    border-style: dotted;
+    border-width: 6px;
+    border-color: rgb(46, 2, 243);
+    border-radius: 20px;
+}
+
+/* shortcut for 3 lines in above code */
+h1{
+    border: 3px solid hsl(271, 100%, 30%);
+    border-radius: 20;
+}
+p{
+    border-bottom: 3px solid red;
+    border-top: 3px solid rgb(0, 0, 0);
+    border-left: 3px solid orange;
+    border-right: 3px solid blue;
+    
+    border-radius:10px;
+}
+
+/* text shadows and box stadows */
+h2{
+    /* horizontal offset,vertical offset, blur and colors comma-separated */
+    text-shadow: 3px 3px 5px red,-3px -3px 5px rgb(2, 249, 237);
+}
+#box1{
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 0);
+    box-shadow: 7px 7px 5px green;
+
+    margin:50px;
+    /* to make 50px margins in all directions */
+}
+
+/* margins:space around an element */
+.box{
+    border: 5px solid;
+    font-size: 5em;
+    width: 200px;
+    height: 200px;
+
+
+    margin-top: 30px;
+    margin-left:10px
+}
+#box2{
+    background-color: hsl(0, 100%, 40%);
+}
+#box3{
+    background-color: hsl(189,100%,55%);
+}
+#box4{
+    background-color: rgb(6, 239, 6);
+    /* margin-centre:always box will be to centre of page;margin-left: always sticked to right;margin-right:always to left */
+    margin-left:auto;
+}
+
+/* float:allows other elements to flow around it */
